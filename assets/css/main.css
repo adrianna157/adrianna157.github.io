@@ -100,9 +100,9 @@ input, select, textarea {
 
 	body {
 		background: #ffffff;
-	}
+	} 
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -111,7 +111,7 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
-		}
+		} 
 
 /* Typography */
 
@@ -159,10 +159,10 @@ input, select, textarea {
 
 		}
 
-	body {
+	/* body {
 		background-color: #ffffff;
 		color: #282828;
-	}
+	} */
 
 	body, input, select, textarea {
 		font-family: "Lato", Helvetica, sans-serif;
