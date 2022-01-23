@@ -4127,6 +4127,7 @@ body.is-menu-visible #menu .inner {
 #banner h5,
 #banner h6 {
   color: #ffffff;
+
 }
 
 #banner blockquote {
@@ -4372,11 +4373,10 @@ body.is-menu-visible #menu .inner {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
   font-size: 4.75rem;
-  margin: 0 auto;
+  margin-top: 3rem;
   padding-bottom: 3rem;
   position: relative;
-  text-align-last: justify;
-  text-align: justify;
+  text-align-last: left;
   opacity: 0.95;
 }
 
@@ -4712,6 +4712,7 @@ body.is-preload #banner .inner {
   box-shadow: 10px 5px 5px rgba(192,192,192,0.5);
   transform: translateY(-1%);
   animation: floater 3.5s infinite;
+  position: relative;
   transition: ease .5s;
 }
 
