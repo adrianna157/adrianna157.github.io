@@ -4372,11 +4372,11 @@ body.is-menu-visible #menu .inner {
 #banner h1 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
-  font-size: 4.75rem;
+  font-size: 3.25rem;
   margin-top: 3rem;
   padding-bottom: 3rem;
   position: relative;
-  text-align-last: left;
+  text-align: center;
   opacity: 0.95;
 }
 
@@ -4713,6 +4713,7 @@ body.is-preload #banner .inner {
   transform: translateY(-1%);
   animation: floater 3.5s infinite;
   position: relative;
+  align-self: auto;
   transition: ease .5s;
 }
 
