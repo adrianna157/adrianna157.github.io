@@ -4734,30 +4734,13 @@ body.is-preload #banner .inner {
   text-align: center;
 }
 
-/* images */
-/* For width 400px and smaller: */
-@media only screen and (max-width: 400px) {
-  img {
-    width: 100%;
-  }
-
-  video {
-    width: 100%
-  }
-
-  #profile-pic {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 980px) {
-  #profile-pic {
-    width: 10%;
-  }
-}
 @media screen and (max-width: 1680px) {
+  #profile-pic {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 2056px) {
   #profile-pic {
     width: 20%;
   }
@@ -4767,11 +4750,34 @@ body.is-preload #banner .inner {
     width: 20%;
   }
 }
-@media screen and (max-width: 2056px) {
-  #profile-pic {
+@media only screen and (min-width: 1680px) and (max-width: 2056px){
+   #profile-pic {
     width: 20%;
   }
 }
+@media screen and (max-width: 980px) {
+  #profile-pic {
+    width: 10%;
+  }
+}
+
+/* images */
+/* For width 400px and smaller: */
+@media screen and (max-width: 390px) {
+  img {
+    width: 100%;
+  }
+
+  video {
+    width: 100%
+  }
+
+  #profile-pic {
+    width: 50%;
+  }
+}
+
+
 
 ul {
   padding-right: 4%;
