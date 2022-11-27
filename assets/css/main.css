@@ -1,6 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Oswald:600");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 /*
 	Standout by Pixelarity
 	pixelarity.com | hello@pixelarity.com
@@ -210,6 +209,8 @@ html {
   font-size: 15pt;
 }
 
+/* responsive screen sizes 1680px, 1280px, 980px, and 480px */
+
 @media screen and (max-width: 1680px) {
   html {
     font-size: 13pt;
@@ -249,7 +250,7 @@ body,
 input,
 select,
 textarea {
-  font-family: "Lato", Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.8;
@@ -305,7 +306,7 @@ h6 a {
 }
 
 h1 {
-  font-family: "Oswald", Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 4rem;
   letter-spacing: 0.1rem;
 }
@@ -386,7 +387,7 @@ blockquote {
 code {
   border-radius: 10px;
   border: solid 1px;
-  font-family: "Courier New", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 0.9rem;
   margin: 0 0.25rem;
   padding: 0.25rem 0.65rem;
@@ -394,7 +395,7 @@ code {
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: "Courier New", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 0.9rem;
   margin: 0 0 2rem 0;
 }
@@ -2353,7 +2354,7 @@ input[type="radio"] + label:before {
   text-rendering: auto;
   line-height: 1;
   text-transform: none !important;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Roboto Mono', monospace;
   font-weight: 900;
 }
 
@@ -2664,6 +2665,7 @@ ul.actions.special {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
+  text-shadow: #FC0 1px 0 10px;
   width: 100%;
   margin-left: 0;
 }
@@ -3185,7 +3187,7 @@ table.alt tbody tr td {
 /* Wrapper */
 
 .wrapper {
-  padding: 10rem 0 12rem 0;
+  padding: 1rem 0 12rem 0;
   position: relative;
 }
 
@@ -3800,7 +3802,7 @@ body #page-wrapper {
   -webkit-order: 1;
   -ms-order: 1;
   order: 1;
-  font-family: "Lato", Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 0.65rem;
   font-weight: 900;
   margin-right: 0.25rem;
@@ -4003,7 +4005,7 @@ body #page-wrapper {
 #menu h2 {
   border-bottom: solid 1px rgba(255, 255, 255, 0.25);
   color: inherit;
-  font-family: "Oswald", Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   letter-spacing: 0.1rem;
   padding-bottom: 1rem;
 }
@@ -4157,6 +4159,7 @@ body.is-menu-visible #menu .inner {
   border-color: #ffffff;
   color: #ffffff !important;
   margin-bottom: 60px;
+  box-shadow:#FC0 1px 0 10px;
 
 }
 
@@ -4376,12 +4379,13 @@ body.is-menu-visible #menu .inner {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
   font-size: 3.25rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
   padding-bottom: 3rem;
   position: relative;
   text-align: center;
   opacity: 0.95;
 }
+
 
 #banner .inner {
   -moz-transition: opacity 1.5s ease-in-out;
@@ -4419,6 +4423,7 @@ body.is-menu-visible #menu .inner {
   margin-top: 1px;
   margin-bottom: 1px;
   padding: 3rem 3rem 3rem 0;
+  text-shadow: #FC0 1px 0 10px
 }
 
 #banner .content ul {
@@ -4678,9 +4683,14 @@ body.is-preload #banner .bg {
     width: 100%;
   }
 
-  #banner .content p {
+  #banner .content {
     font-size: 1.15rem;
     padding-top: 2rem;
+    text-shadow: #FC0 1px 0 10px;;
+  }
+
+  #banner .content p {
+    text-shadow: #FC0 1px 0 10px;
   }
 
   #banner .content ul {
@@ -4712,15 +4722,31 @@ body.is-preload #banner .inner {
     padding-top: 4rem !important;
   }
 }
-#profile-pic {
-  border-radius: 50%;
-  box-shadow: 10px 5px 5px rgba(192,192,192,0.5);
-  transform: translateY(-1%);
-  animation: floater 3.5s infinite;
+.inner > img {
   position: relative;
+  box-shadow: 5px 5px 10px #FC0;
+  border-radius: 25% 10%;
   align-self: auto;
-  transition: ease .5s;
 }
+
+.glow {
+  font-size: 80px;
+  color: #FC0;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FC0, 0 0 40px #FC0, 0 0 50px #FC0, 0 0 60px #FC0, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px rgb(250, 232, 126), 0 0 40px rgb(250, 232, 126), 0 0 50px rgb(250, 232, 126), 0 0 60px rgb(250, 232, 126), 0 0 70px rgb(250, 232, 126), 0 0 80px rgb(250, 232, 126);
+  }
+}
+
 
 @keyframes floater {
   0%{transform: translateY(-1%);transition: ease 0.5s;}
