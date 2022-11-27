@@ -3034,7 +3034,7 @@ header.major h1 {
   border-bottom: 1px solid;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  color: #FC0;
+  color: white;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -3587,8 +3587,9 @@ table.alt tbody tr td {
   animation: glow 1s ease-in-out infinite alternate;
 }
 .split .content h1 {
-  color: #FC0;
+  color: white;
   text-align: center;
+  text-decoration: underline;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
@@ -4680,8 +4681,8 @@ body.is-preload #banner .bg {
 
   #banner h1 {
     font-size: 2.5rem;
-    padding-bottom: 2rem;
-    margin-top: 6rem;
+    padding-bottom: 1rem;
+    margin-top: 12rem;
   }
 
   #banner .inner {
@@ -4704,9 +4705,9 @@ body.is-preload #banner .bg {
   }
 
   #banner h1 {
-    padding-bottom: 2rem;
     text-align-last: center;
     text-align: center;
+    font-size: 1.5rem;
   }
 
   #banner .button {
@@ -4723,8 +4724,8 @@ body.is-preload #banner .bg {
 
   #banner .content {
     font-size: 1.15rem;
-    padding-top: 2rem;
-    text-shadow: #FC0 1px 0 10px;;
+    padding-bottom: 7rem;
+    text-shadow: #FC0 1px 0 10px;
   }
 
   #banner .content p {
