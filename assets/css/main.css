@@ -233,6 +233,9 @@ html {
   html {
     font-size: 12pt;
   }
+  h1.glow {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -3236,7 +3239,9 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 {
-  background: #f9f9f9;
+  background-image: url("../../images/slides/slide01.jpg");
+  background-color: #cccccc;
+  color: white;
 }
 
 .wrapper.style2:before,
@@ -3569,15 +3574,29 @@ table.alt tbody tr td {
   margin-bottom: 2.5rem;
 }
 
+.split .content h2 {
+  color: white;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
 .split .content > *:last-child {
   margin-bottom: 0;
 
+}
+
+.split .project-contact-icons .contact-icons a {
+  color:white;
 }
 
 .split .contact-icons {
   margin-bottom: 0;
   padding-left: 4rem;
 }
+
+
 
 @media screen and (max-width: 1280px) {
   .split .content {
@@ -3639,7 +3658,7 @@ table.alt tbody tr td {
 
   100% {
     top: 0;
-    opacity: 1;
+    opacity: 1; 
   }
 }
 
@@ -3676,6 +3695,8 @@ body #page-wrapper {
     padding-top: 3rem;
   }
 }
+
+
 
 #header {
   -moz-align-items: center;
@@ -4648,6 +4669,7 @@ body.is-preload #banner .bg {
   #banner h1 {
     font-size: 2.5rem;
     padding-bottom: 2rem;
+    margin-top: 6rem;
   }
 
   #banner .inner {
@@ -4673,6 +4695,10 @@ body.is-preload #banner .bg {
     padding-bottom: 2rem;
     text-align-last: center;
     text-align: center;
+  }
+
+  #banner .button {
+    margin-top: 2rem;
   }
 
   #banner .content {
